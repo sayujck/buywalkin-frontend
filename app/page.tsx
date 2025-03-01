@@ -50,7 +50,7 @@ export default function App() {
                                     { icon: <AddLocationAltIcon fontSize="small" />, label: "Saved Address", sub: "Add and edit address" },
                                     { icon: <AccountCircle fontSize="small" />, label: "Account", sub: "Manage your account" },
                                 ].map((item, index) => (
-                                    <ListItem button key={index} selected={item.label === "Home"} sx={{ backgroundColor: item.label === "Home" ? "#E3F2FD" : "transparent", "&:hover": { backgroundColor: "#BBDEFB" } }}>
+                                    <ListItem component="button" key={index} selected={item.label === "Home"} sx={{ backgroundColor: item.label === "Home" ? "#E3F2FD" : "transparent", "&:hover": { backgroundColor: "#BBDEFB" } }}>
                                         <ListItemIcon sx={{ minWidth: isSmallScreen ? 40 : 28 }}>{item.icon}</ListItemIcon>
                                         {!isSmallScreen && (
                                             <ListItemText
