@@ -5,6 +5,8 @@ import { Home, ShoppingCart, AccountCircle, Notifications, MoreVert, FavoriteBor
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import TuneIcon from '@mui/icons-material/Tune';
 import Link from "next/link";
+import Image from "next/image";
+import logo from "./assets/buywalkin_logo.png" 
 
 
 export default function App() {
@@ -17,7 +19,7 @@ export default function App() {
                 <Grid item xs={isSmallScreen ? 1 : 2.5}>
                     <Paper sx={{ height: "100%", display: "flex", flexDirection: "column" }} elevation={0}>
                         <div className="flex items-center p-3">
-                            <img width={isSmallScreen ? 24 : 30} height={isSmallScreen ? 24 : 30} src="https://buywalkin.com/images/buywalkin_logo.png" alt="Logo" />
+                            <Image width={isSmallScreen ? 24 : 30} height={isSmallScreen ? 24 : 30} src={logo} alt="Logo" />
                             {!isSmallScreen && (
                                 <Typography variant="h6" className="p-2 font-bold">
                                     BuyWalkin
