@@ -157,8 +157,8 @@ export default function App() {
                         <Paper sx={{ p: 2, height: "100%", overflowY: "auto" }} elevation={0}>
                             <Typography variant="h6">Business you might like</Typography>
                             {
-                                [1, 2, 3, 4, 5].map(item => (
-                                    <div className="flex items-center">
+                                [1, 2, 3, 4, 5].map((item,index) => (
+                                    <div key={index} className="flex items-center">
                                         <Avatar sx={{ width: 40, height: 40 }} />
                                         <ListItem sx={{ display: "flex", alignItems: "center" }}>
                                             <ListItemText
